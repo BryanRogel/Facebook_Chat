@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+ 
+ReactDOM.render(
+  <MessengerCustomerChat
+    pageId="115815143166629"
+    appId="<APP_ID>"
+    htmlRef="<REF_STRING>"
+  />,
+  document.getElementById('demo')
+);
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
